@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="prototipo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+  <title>Hidrogênio Verde</title>
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src=".//img/hidrogenioverde.png" alt="logo">
+      </a>
+
+      <nav class="navbar">
+        <a href="sobre.html">Sobre</a>
+        <a href="prototipo.html">Protótipo</a>
+        <a href="objetivo.html">Objetivo</a>
+        <a href="tecnologia.html">Tecnologias</a>
+        <a href="pesquisa.html">Pesquisa</a>
+      </nav>
+
+      <div class="icons">
+
+      </div>
+    </section>
+  </header>
+  <section id="prototipo" class="fade-in">
+    <div class="container">
+      <h2 style="text-align: center;">Protótipo</h2>
+
+
+      <div class="prototipo">
+        <div class="feedback-box">
+          <h3>Deixe sua opinião</h3>
+          <textarea id="feedback" placeholder="Escreva aqui..."></textarea>
+          <button id="btnEnviar" onclick="enviarFeedback()">Enviar</button>
+          <div id="confirmacao" class="hidden">✔ Feedback enviado!</div>
+        </div>
+        <div class="prototipo-img">
+          <img src="./img/carrinhoprototipo.png" alt="Planta do Protótipo" id="prototipoImg">
+        </div>
+
+        <!-- Modal fora da div da imagem -->
+        <div id="modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imgModal">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

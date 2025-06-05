@@ -1,0 +1,129 @@
+:root {
+    --main-color: white;
+    --black: black;
+    --bg: rgb(207, 236, 201);
+    --border: 0.1rem solid green;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(0, 99, 38);
+    background: url("./img/fundopaginas.png");
+    overflow: hidden;
+
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 99;
+    border-bottom: green solid 2px;
+    background: linear-gradient(to left, black, rgb(0, 41, 13));
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 3rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.navbar a:hover {
+    color: rgb(133, 248, 143);
+    border-bottom: var(--border);
+    padding-bottom: 0.5;
+    font-size: 2.2rem;
+
+}
+
+.document {
+    margin-top: 180px;
+    margin-bottom: -80px;
+    color: white;
+    font-size: 6rem;
+    text-align: justify;
+    margin-left: 380px;
+    margin-bottom: 100px;
+}
+
+.text {
+    margin-top: 100px;
+    margin-bottom: -80px;
+    color: white;
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 800px;
+    height: 130px;
+    padding-top: 2.3vh;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3rem;
+}
+
+.pesqdoc h4{
+    margin-top: -100px;
+}
+.txt a{
+    background-color: brown;
+}
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(61, 59, 59, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+
+  .btn-download:hover {
+    background-color: rgba(21, 19, 19, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-download:active {
+    background-color: rgba(132, 131, 131, 0.5);
+    transform: translateY(0);
+  }
